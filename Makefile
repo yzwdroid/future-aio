@@ -7,6 +7,9 @@ install_windows_on_mac:
 	rustup target add x86_64-pc-windows-gnu
 	brew install mingw-w64
 
+compile_wasm:
+	rustup target add wasm32-unknown-unknown
+	cargo build --target wasm32-unknown-unknown
 
 test:
 	cargo test	--features==unstable

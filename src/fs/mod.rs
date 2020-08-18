@@ -21,7 +21,6 @@ pub use self::bounded::BoundedFileSinkError;
 pub use self::mmap::{MemoryMappedFile, MemoryMappedMutFile};
 
 
-#[cfg(feature = "asyncstd")]
 #[cfg(feature = "fs")]
 pub use async_std::fs::*;
 
